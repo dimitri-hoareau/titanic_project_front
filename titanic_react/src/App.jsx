@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DataTable from './DataTable'
-import {fakeData} from './fakeData.js'
+import Graph from './Graph';
 import './App.css'
 
 
@@ -14,11 +14,12 @@ function App() {
       .catch(error => console.error('Error fetching data:', error));
   }, []); 
   
-  console.log(data)
 
   return (
     <>
-  <DataTable data={data} />
+      <Graph data={data} /> 
+      <hr style={{ margin: '20px 0' }} />
+      <DataTable data={data} />
     </>
   )
 }
