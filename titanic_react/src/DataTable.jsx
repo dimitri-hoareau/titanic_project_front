@@ -41,8 +41,6 @@ const DataTable = ({ data }) => {
       ))}
     </div>
     
-    
-    
     <table>
     <thead>
       <tr>
